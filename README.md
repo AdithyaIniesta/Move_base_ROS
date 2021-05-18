@@ -24,7 +24,7 @@ Terminal 4: roslaunch adithya_navigate adithya_bringup.launch
 
 ### Demo and Results
 1. Green arrows indicate different goal poses with respect to map co-ordinate system. 
-
+![Gazebo1](https://user-images.githubusercontent.com/13369817/118698635-f2f40d00-b810-11eb-8dc3-e104c968e65f.png)
 
 ### Reference Repositories
 - http://edu.gaitech.hk/turtlebot/map-navigation.html
