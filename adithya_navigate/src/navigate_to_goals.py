@@ -7,7 +7,7 @@ from actionlib_msgs.msg import *
 from visualization_msgs.msg import Marker, MarkerArray
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from tf.transformations import euler_from_quaternion, quaternion_from_euler
-from geometry_msgs.msg import Pose, Point, Quaternion, PoseWithCovarianceStamped,  PointStamped, Vector3
+from geometry_msgs.msg import Pose, Point, Quaternion, PoseWithCovarianceStamped, PointStamped
 
 
 class NavigateToGoals():
@@ -20,7 +20,6 @@ class NavigateToGoals():
         self.count_goals = 0
         self.total_time = 0.0
         self.is_start = True
-        self.goal_locations = []
         self.max_no_of_markers = 100
 
         self.marker_pub = rospy.Publisher('/visualization_marker', Marker, queue_size = 100)
@@ -154,8 +153,8 @@ class NavigateToGoals():
     def print_total_time(self, terminate = False):
         
         if(terminate):
-            rospy.loginfo("Traversal to goal '{count}' terminated:".format(count = self.count_goals + 1))
-            rospy.loginfo("Number of goals visited := {count}".format(count = self.count_goals))
+            rospy.loginfo("Traversal to goal '{count}' terminated:".format(count = self.count_goals))
+            rospy.loginfo("Number of goals visited := {count}".format(count = self.count_goals - 1))
             rospy.loginfo("Total time to reach goals and back to initial pose:= {time:.2f} seconds "\
                 .format(time = self.total_time))
         else:
@@ -171,16 +170,15 @@ class NavigateToGoals():
         self.go_to_goal(self.start_x, self.start_y, self.start_yaw)
         end = time.time()
         self.total_time += (end - start)
-        # self.print_total_time(terminate = True)
+        self.print_total_time(terminate = True)
         rospy.loginfo("Ctrl-C !. Going back to initial pose")
 
 if __name__ == '__main__':
     try:
         rospy.init_node('navigate_to_goals', anonymous=False)
         navigator = NavigateToGoals()
-
+        rospy.spin()
     except rospy.ROSInterruptException:
         rospy.loginfo("Quit program")
-
 
 
