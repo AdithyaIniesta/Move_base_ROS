@@ -23,7 +23,7 @@ Terminal 4: roslaunch adithya_navigate adithya_bringup.launch
 ```
 ### Goal Poses
 1. Goal poses are mentioned in launch file adithya_bringup.launch. 
-2. Optionally, we can publish goal points with orientation using "Publish Points" in Rviz. 
+2. Optionally, we can publish goal points without orientation using "Publish Points" in Rviz. 
 
 ### Demo and Results
 #### Screenshot of Gazebo world and RViz map is taken from the official repository of Neobotix GmbH [1]
