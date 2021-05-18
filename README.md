@@ -5,8 +5,7 @@
 - The mobile robot should return to initial pose when the program is interrupted by Ctrl + C. 
 
 ### Instructions  
-"""
-git clone https://github.com/AdithyaIniesta/Move_base_ROS.git <br>
+"git clone https://github.com/AdithyaIniesta/Move_base_ROS.git" <br>
 
 Terminal 1: echo "export MAP_NAME="neo_workshop"" >> ~/.bashrc <br>
 Terminal 1: roslaunch neo_simulation simulation.launch <br>
