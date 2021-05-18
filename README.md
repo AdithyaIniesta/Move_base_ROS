@@ -1,5 +1,5 @@
-### Move_base_ROS
-### Problem Statement <br>
+### 
+### Move_base_ROS: Problem Statement <br>
 - Implement a python script to guide a mobile robot to different goal poses. 
 - Print the total time taken to visit goal poses. 
 - The mobile robot should return to initial pose when the program is interrupted by Ctrl + C. 
@@ -23,3 +23,8 @@ Terminal 4: roslaunch adithya_navigate adithya_bringup.launch
 ```
 
 ### Demo and Results
+
+
+
+#### Reference Repositories
+- http://edu.gaitech.hk/turtlebot/map-navigation.html
