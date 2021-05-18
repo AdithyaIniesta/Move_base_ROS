@@ -7,10 +7,8 @@
 ### Instructions  
 
 ```
-cd (path to catkin workspace)/src
-git clone https://github.com/AdithyaIniesta/Move_base_ROS.git
-cd ..
-catkin build
+
+catkin build adithya_navigate
 source ~/.bashrc
 Terminal 1: echo "export MAP_NAME="neo_workshop"" >> ~/.bashrc
 source ~/.bashrc
