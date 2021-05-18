@@ -15,7 +15,7 @@ source ~/.bashrc
 Terminal 1: echo "export MAP_NAME="neo_workshop"" >> ~/.bashrc <br>
 source ~/.bashrc
 
-Source all the terminals
+#### Source all the terminals
 Terminal 1: roslaunch neo_simulation simulation.launch <br>
 Terminal 2: roslaunch neo_simulation mpo_700_amcl.launch <br>
 Terminal 3: roslaunch neo_simulation mpo_700_move_base.launch <br>
