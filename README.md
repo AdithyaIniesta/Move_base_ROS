@@ -1,5 +1,8 @@
 # Move_base_ROS
 # Problem Statement
+Implement a python script to guide a mobile robot to different goal poses. 
+Print the total time taken to visit goal poses. 
+The mobiel robot should return to initial pose when the program is interrupted by Ctrl + C. 
 
 # Instructions 
 git clone https://github.com/AdithyaIniesta/Move_base_ROS.git <br>
