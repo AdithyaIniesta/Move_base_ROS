@@ -25,9 +25,9 @@ Terminal 4: roslaunch adithya_navigate adithya_bringup.launch
 ### Demo and Results
 #### Screenshot of Gazebo world and RViz map is taken from the official repository of Neobotix GmbH [1]
 1. Green arrows indicate different goal poses with respect to map co-ordinate system. 
-                                                                                 |
- :-------------------------:|:-------------------------:
-![Gazebo1](https://user-images.githubusercontent.com/13369817/118698635-f2f40d00-b810-11eb-8dc3-e104c968e65f.png) | ![RVIZ1](https://user-images.githubusercontent.com/13369817/118699033-5aaa5800-b811-11eb-86d5-f4dde524a6b6.png)
+![RVIZ2](https://user-images.githubusercontent.com/13369817/118699743-2e430b80-b812-11eb-8406-245ebaea0be0.png)
+2. The red arrow indicates the pose of the robot and the goal reach is confirmed when the red arrow of the robot aligns with the green arrow. 
+![RVIZ3](https://user-images.githubusercontent.com/13369817/118699813-461a8f80-b812-11eb-89d0-70ce083647fc.png)
 
 ### Reference Repositories
 - [1] https://github.com/neobotix/neo_simulation
