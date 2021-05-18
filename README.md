@@ -28,7 +28,8 @@ Terminal 4: roslaunch adithya_navigate adithya_bringup.launch
 ![RVIZ2](https://user-images.githubusercontent.com/13369817/118699743-2e430b80-b812-11eb-8406-245ebaea0be0.png)
 2. The red arrow indicates the pose of the robot and the goal reach is confirmed when the red arrow of the robot aligns with the green arrow. 
 ![RVIZ3](https://user-images.githubusercontent.com/13369817/118699813-461a8f80-b812-11eb-89d0-70ce083647fc.png)
-
+3. If the node is interrupted or if all the goal poses are visited, the robot will return to the initial pose. 
+![Screenshot from 2021-05-18 13-17-46](https://user-images.githubusercontent.com/13369817/118700280-c93be580-b812-11eb-8533-bd12f1c097b9.png)
 ### Reference Repositories
 - [1] https://github.com/neobotix/neo_simulation
 - [2] http://edu.gaitech.hk/turtlebot/map-navigation.html
